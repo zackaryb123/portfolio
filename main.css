@@ -37,6 +37,10 @@
     height: 90%;
   }
 
+  .fixed a img:hover {
+      box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  }
+
   .headshot-column {
     width: 25%;
   } 
@@ -61,7 +65,9 @@
   }
 
   .fixed h1 {
+      font-weight: normal;
       font-size: 15px;
+      text-shadow: white 0.1em 0.1em 0.2em;
   }
 
   .top-row {
@@ -100,6 +106,7 @@
   }
 
  .dropdown {
+     padding: 0 5px;
     background-color: #343A40;
     border: ghostwhite .5px solid;
     margin: 0 .5rem;
@@ -207,7 +214,7 @@
   }
 
   main h1 {
-    font-weight: bold !important; 
+      text-shadow: white 0.1em 0.1em 0.2em;
     color: #343A40;
     margin: 10px;
     font-size: 24px;
