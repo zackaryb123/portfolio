@@ -66,7 +66,7 @@
 
   .fixed h1 {
       font-weight: normal;
-      font-size: 15px;
+      font-size: 20px;
       text-shadow: white 0.1em 0.1em 0.2em;
   }
 
@@ -188,10 +188,12 @@
   }
 
   section {
-    display: flex !important;
-    min-height: 200px;
-    padding: .5rem;
-    background-color: lightsteelblue;
+      max-width: 1100px;
+      display: flex !important;
+      min-height: 200px;
+      padding: 30px;
+      background-color: lightsteelblue;
+      margin: 0 auto;
   }
 
   section .nav {
