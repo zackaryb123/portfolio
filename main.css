@@ -261,11 +261,16 @@
   .page-header {
       position: fixed;
       top: 6rem;
-      margin-top: -4rem;
+      /*margin-top: -4rem;*/
       z-index: 10;
       left: 1rem;
       color: ghostwhite;
+      -webkit-transition: 3s ease-in;
+      -moz-transition: 3s ease-in;
+      -o-transition: 3s ease-in;
+      transition: 1s ease-in;
   }
+
 
 .content-container {
     background: rgba(0, 0, 0, 0.5);
@@ -381,12 +386,12 @@
   }
 
   .bubble {
-      position: relative;
+      /*position: relative;*/
   }
 
 
 .bubble:hover {
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    /*box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;*/
 }
 
   .bubble a {
@@ -400,7 +405,6 @@
   }
 
   .bubble-3 {
-      border: 1px solid ghostwhite;
       display: inline-block;
       border-radius: 3rem;
       height: 6rem;
@@ -408,20 +412,18 @@
       color: ghostwhite;
   }
 
-  .arrow-down-3{left: 28px;}
+  /*.arrow-down-3{left: 28px;}*/
 
   .bubble-5 {
-      border: 1px solid ghostwhite;
       display: inline-block;
       border-radius: 5rem;
       height: 10rem;
       width: 10rem;
       color: ghostwhite;
   }
-  .arrow-down-5 {left: 58px}
+  /*.arrow-down-5 {left: 58px}*/
 
   .bubble-8 {
-      border: 1px solid ghostwhite;
       display: inline-block;
       border-radius: 8rem;
       height: 16rem;
@@ -429,33 +431,20 @@
       color: ghostwhite;
   }
 
-  .arrow-down-8 {left: 108px}
+  /*.arrow-down-8 {left: 108px}*/
 
 
 .bubble-10 {
-    border: 1px solid ghostwhite;
     display: inline-block;
     border-radius: 10rem;
     height: 20rem;
     width: 20rem;
     color: ghostwhite;
 }
-.arrow-down-10 {left: 140px}
+/*.arrow-down-10 {left: 140px}*/
 
 .bubble-txt {
 
-}
-
-.tooltip {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    border: 1px solid black;
-    border-radius: .3rem;
-    padding: .5rem;
-    right: 0;
-    left: 0;
-    margin-left: .5rem;
-    margin-right: .5rem;
 }
 
 /*****Colors*****/
@@ -485,12 +474,60 @@
 .netlify {background-color: #01C6B5}
 
 
-.arrow-down {
+/*****Flip Bubbles******/
+/* entire container, keeps perspective */
+.flip-container {
+    display: inline-block;
+    perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    /*width: 320px;*/
+    /*height: 480px;*/
+}
+
+/* flip speed goes here */
+.flipper {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    border: 1px solid ghostwhite;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+/* hide back of pane during swap */
+.face {
+    backface-visibility: hidden;
     position: absolute;
-    width: 0;
-    height: 0px;
-    border-left: 19px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid rgba(0, 0, 0, 0.5);
-    top: 2.2rem;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* front pane, placed above back */
+.front {
+
+}
+/* back, initially hidden pane */
+.back {
+    background-color: white;
+    transform: rotateY(180deg);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.middle {
+    padding-top: 50%;
 }
