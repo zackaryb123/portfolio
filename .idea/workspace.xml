@@ -30,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="555" column="50" lean-forward="true" selection-start-line="555" selection-start-column="50" selection-end-line="555" selection-end-column="50" />
+            <state relative-caret-position="260">
+              <caret line="388" column="81" lean-forward="true" selection-start-line="388" selection-start-column="81" selection-end-line="388" selection-end-column="81" />
               <folding>
                 <element signature="n#svg#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#svg#0;n#li#4;n#ul#0;n#div#1;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -173,7 +173,7 @@
       <updated>1521576245854</updated>
       <workItem from="1521576247079" duration="111000" />
       <workItem from="1532016974798" duration="52018000" />
-      <workItem from="1532095722014" duration="25282000" />
+      <workItem from="1532095722014" duration="25410000" />
     </task>
     <task id="LOCAL-00001" summary="updated portfolio">
       <created>1532070347292</created>
@@ -189,11 +189,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532365214315</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated portfolio">
+      <created>1532374529257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532374529257</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77411000" />
+    <option name="totallyTimeSpent" value="77539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="99" width="1190" height="897" extended-state="0" />
@@ -283,14 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -307,10 +306,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="555" column="50" lean-forward="true" selection-start-line="555" selection-start-column="50" selection-end-line="555" selection-end-column="50" />
+        <state relative-caret-position="260">
+          <caret line="388" column="81" lean-forward="true" selection-start-line="388" selection-start-column="81" selection-end-line="388" selection-end-column="81" />
           <folding>
             <element signature="n#svg#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#svg#0;n#li#4;n#ul#0;n#div#1;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
